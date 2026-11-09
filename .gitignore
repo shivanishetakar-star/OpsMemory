@@ -1,0 +1,27 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local configuration
+.streamlit/secrets.toml
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+
+# Backups
+*.phase5-backup

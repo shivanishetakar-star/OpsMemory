@@ -1,0 +1,47 @@
+[
+  {
+    "id": "INC-001",
+    "service": "Payment API",
+    "error": "HTTP 502",
+    "deployment": "v2.4",
+    "root_cause": "Database connection pool exhaustion",
+    "resolution": "Rolled back deployment and restarted payment service",
+    "outcome": "Error rate returned to normal"
+  },
+  {
+    "id": "INC-002",
+    "service": "User API",
+    "error": "HTTP 503",
+    "deployment": "v1.8",
+    "root_cause": "Redis connection failures",
+    "resolution": "Restarted Redis connection pool and rolled back configuration",
+    "outcome": "Service recovered"
+  },
+  {
+    "id": "INC-003",
+    "service": "Payment API",
+    "error": "HTTP 500",
+    "deployment": "v2.5",
+    "root_cause": "Database timeout caused by excessive connections",
+    "resolution": "Reduced connection usage and restarted service",
+    "outcome": "Payment requests returned to normal"
+  },
+  {
+    "id": "INC-004",
+    "service": "Order API",
+    "error": "HTTP 502",
+    "deployment": "v3.1",
+    "root_cause": "Upstream service timeout",
+    "resolution": "Restarted affected service and increased timeout configuration",
+    "outcome": "Order API recovered"
+  },
+  {
+    "id": "INC-005",
+    "service": "Payment API",
+    "error": "HTTP 502",
+    "deployment": "v2.6",
+    "root_cause": "Database connection exhaustion",
+    "resolution": "Restarted payment service and reduced connection pool size",
+    "outcome": "Error rate returned to normal"
+  }
+]

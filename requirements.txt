@@ -2,3 +2,4 @@
 streamlit==1.67.0
 python-dotenv==1.2.4
 hindsight-client==1.2.0
+Authlib==1.9.5

@@ -112,7 +112,7 @@ The `.env` file contains local configuration and must never be committed to Git.
 ### Step 1: Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/shivanishetakar-star/OpsMemory.git
 cd opsmemory
 ```
 
